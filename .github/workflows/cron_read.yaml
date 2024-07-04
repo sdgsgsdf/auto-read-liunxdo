@@ -3,7 +3,7 @@ name: Scheduled Node.js CI
 on:
   schedule:
     # 每天 UTC 时间 18:00 运行
-    - cron: "0 18 * * *"
+    - cron: "0 0 * * *"
   workflow_dispatch: # 添加这行以允许手动触发
 
 jobs:
@@ -16,8 +16,8 @@ jobs:
         node-version: [20.x] # 选择你需要的 Node.js 版本
     env:
       # 在作业级别设置环境变量
-      USERNAMES: ${{ secrets.USERNAMES }}
-      PASSWORDS: ${{ secrets.PASSWORDS }}
+      USERNAMES: ${{ secrets.testhellokit@qq.com }}
+      PASSWORDS: ${{ secrets.BC8T$$abfk7TVbcVT }}
 
     steps:
       - uses: actions/checkout@v3 # 检出你的仓库
